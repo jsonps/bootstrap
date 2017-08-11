@@ -1,0 +1,78 @@
+*{margin:0;padding:0;}
+body{background:#4c5666;font-size:12px;font-family:'微软雅黑';color:#666;}
+/*music start*/
+#music{/*width:610px*/width:300px;height:470px;margin:100px auto;overflow:hidden;}
+
+/*music-lrc start*/
+#music .music-lrc{width:300px;height:470px;border-radius:5px;float:left;background:#787878;position:relative;z-index:2;}
+#music .music-lrc .m-title{width:100%;height:65px;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f2f3f3), color-stop(1, #dddfe1));border-radius:5px 5px 0px 0px;border-bottom:1px solid #ced1d3;}
+#music .music-lrc .m-title .m-dir{width:50px;height:65px;float:left;position:relative;}
+#music .music-lrc .m-title .m-dir a{width:24px;height:18px;display:block;background:url('../images/sm_icon.png')no-repeat -243px -127px;position:absolute;top:50%;left:50%;margin-top:-9px;margin-left:-12px;}
+#music .music-lrc .m-title .m-dir a:hover{background-position:-243px -151px;}
+#music .music-lrc .m-title .m-name{width:200px;height:65px;font-size:18px;line-height:65px;text-align:center;float:left;text-overflow: ellipsis;overflow: hidden;}
+#music .music-lrc .m-title .m-share{width:50px;height:65px;float:right;position:relative;}
+#music .music-lrc .m-title .m-share a{width:22px;height:18px;display:block;background:url('../images/sm_icon.png')no-repeat -268px -127px;position:absolute;top:50%;left:50%;margin-top:-9px;margin-left:-11px;}
+#music .music-lrc .m-title .m-share a:hover{background-position:-27px -149px;}
+#music .music-lrc .m-con{width:300px;height:300px;}
+#music .music-lrc .m-tools{width:300px;height:104px;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f2f3f3), color-stop(1, #dddfe1));border-radius:0 0 5px 5px;}
+#music .music-lrc .m-tools .m-play{width:300px;height:40px;padding:5px 0;}
+#music .music-lrc .m-tools .m-play .m-btn{width:100%;}
+#music .music-lrc .m-tools .m-play .m-btn a{display:block;background:url('../images/sm_icon.png') no-repeat;float:left;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-1{width:23px;height:19px;background-position:-291px -127px;margin: 12px 0 0 7px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-1:hover{background-position:-291px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-1.m-btn-mark{background-position:-291px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-2{width:28px;height:18px;background-position:-317px -127px;margin: 12px 0 0 55px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-2:hover{background-position:-317px -152px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-3{width:20px;height:25px;background-position:-347px -125px;margin:8px 0 0 20px;display:none;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-3:hover{background-position:-347px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-3-1{width:20px;height:25px;background-position:-369px -125px;margin:8px 0 0 20px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-3-1:hover{background-position:-369px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-4{width:28px;height:18px;background-position:-392px -127px;margin:12px 0 0 20px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-4:hover{background-position:-392px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-5{width:24px;height:22px;background-position:-421px -126px;margin: 12px 0 0 68px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-5:hover{background-position:-421px -151px;}
+#music .music-lrc .m-tools .m-play .m-btn .m-btn-5.m-btn-mark{background-position:-421px -151px;}
+#music .music-lrc .m-tools .m-time{width:300px;height:14px;padding:16px 0;}
+#music .music-lrc .m-tools .m-time .m-t-start{width:35px;float:left;padding-left:12px;}
+#music .music-lrc .m-tools .m-time .m-t-bar{width:206px;height:8px;margin-top:5px;background:#a2a7aa;border-radius:6px;float:left;position:relative;}
+#music .music-lrc .m-tools .m-time .m-t-bar .m-t-bar-1{/*width:30%*/width:0;height:8px;background:#f0676a;border-radius: 6px 0 0 6px;}
+#music .music-lrc .m-tools .m-time .m-t-bar .m-t-bar-2{width:12px;height:12px;background:#fff;position:absolute;top:-2px;/*left:28%*/left:0;border-radius:50%;cursor:pointer;z-index:2;}
+#music .music-lrc .m-tools .m-time .m-t-end{width:35px;float:left;padding-left:12px;}
+#music .music-lrc .m-con{width:300px;height:300px;overflow:auto;}
+#music .music-lrc .m-con .lrcline{font-size:14px;color:#fff;line-height:30px;padding-left:15px;text-align:center;}
+#music .music-lrc .m-con .lrcSel{font-size:20px;color:red;}
+/*end music-lrc*/
+
+/*music-list start*/
+#music .music-list{width:300px;height:470px;border-radius:5px;float:right;background:#212732;position:relative;z-index:1;left:-310px;}
+#music .music-list .music-list-name{300px;height:48px;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f87d7a), color-stop(1, #ef6a6c));border-radius:5px 5px 0 0;}
+#music .music-list .music-list-name .m-none{width:50px;height:48px;float:left;position:relative;}
+#music .music-list .music-list-name .m-none a{width:16px;height:12px;display:block;background:url("../images/sm_icon.png") no-repeat -448px -130px;position:absolute;top:50%;left:50%;margin-top:-6px;margin-left:-8px;}
+#music .music-list .music-list-name .m-none a:hover{background-position:-448px -151px;}
+#music .music-list .music-list-name .m-love{width:200px;height:48px;font-size:18px;line-height:48px;text-align:center;color:#fff;float:left;}
+#music .music-list .music-list-name .m-down{width:50px;height:48px;float:right;position:relative;}
+#music .music-list .music-list-name .m-down a{width:22px;height:16px;display:block;background:url("../images/sm_icon.png") no-repeat -468px -128px;position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-11px;}
+#music .music-list .music-list-name .m-down a:hover{background-position:-468px -151px;}
+#music .music-list .music-list-con{width:300px;}
+#music .music-list .music-list-con ul li{list-style:none;width:300px;height:40px;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #262c35), color-stop(1, #212732));border-bottom:1px solid #1b1f25;}
+#music .music-list .music-list-con ul li i{width:12px;height:16px;display:block;background:url("../images/sm_icon.png") no-repeat 0px -150px;float:left;margin:12px;}
+#music .music-list .music-list-con ul li a{width:224px;height:40px;line-height:40px;display:block;float:left;color:#7e868e;text-decoration:none;font-size:14px;text-overflow: ellipsis;overflow: auto;}
+#music .music-list .music-list-con ul li a:hover{color:#fff;}
+#music .music-list .music-list-con ul .m-select{border-bottom:1px solid #ec5b62;}
+#music .music-list .music-list-con ul .m-select i{background-position:-13px -150px;}
+#music .music-list .music-list-con ul .m-select a{color:#fff;}
+/*end music-list*/
+
+/*滚动条解决方案*/
+::-webkit-scrollbar{width:5px;height:6px;background:#ccc;}
+::-webkit-scrollbar-button{background-color:#e5e5e5;}
+::-webkit-scrollbar-track{background:#999;}
+::-webkit-scrollbar-track-piece{background:#ccc}
+::-webkit-scrollbar-thumb{background:#666;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-scrollbar-resizer{background:#FF0BEE;}
+scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+
+/*end music*/
